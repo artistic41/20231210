@@ -51,10 +51,12 @@ return [
 		/**
 		Race 5
 		*/
-		'Win Odds'  =>  '1, 2, 5, 3, 10, 4, 6, 7, 8, 9',
+		'Win Odds'  =>  '1, 2, 5, 3, 10, 6, 4, 7, 9, 8',
 		'Pla Odds'  =>  '1, 2, 5, 3, 10, 4, 6, 7, 9, 8',
 		'Total Runners '  =>  10,
 		/** Based on win odds */
+		'win odds candidate(k = 9)' => '2',
+		'win odds candidate(k = 6)' => '10',
 		/** Black selection */
 		'history w' => '2, 10',
 		'SURE PLACE' => '2',
