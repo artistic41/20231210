@@ -104,9 +104,8 @@ return [
 			'5' => '-10 HKD',
 			'6' => '-10 HKD',
 			'7' => '-10 HKD',
-			'8' => '-10 HKD',
 		],
-		'Total Bets'  =>  '-90 HKD'
+		'Total Bets'  =>  '-80 HKD'
 	],
 	'8' => [
 		/**
