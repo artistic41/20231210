@@ -75,7 +75,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     $racetext .= "\t\t],\n";
     $racetext .= "\t\t'Total Bets set 1'  =>  '$total HKD',\n";
-    $racetext .= "\t\t'Set 1 Win Bets'  =>  [\n";
+    $racetext .= "\t\t'Set 2 Win Bets'  =>  [\n";
     $total = 0;
     foreach($bets2 as $horse => $bet){
         $racetext .= "\t\t\t'$horse' => '" . 10 * $bet . " HKD',\n"  ;
