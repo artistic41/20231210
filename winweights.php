@@ -51,7 +51,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext = "";
     $set1 = explode(", ", $winsFile[$raceNumber]['Set 1']);
     $set2 = explode(", ", $winsFile[$raceNumber]['Set 2']);
-    $favorite = explode(", ", $winsFile[$raceNumber]['favorite']);
+    $favorite = $winsFile[$raceNumber]['favorite'];
     $weights1 = [];
     $weights2 = [];
     foreach($set1 as $winner){
@@ -67,10 +67,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $racetext .= "\t\t/**\n";
     $racetext .= "\t\tRace $raceNumber\n";
     $racetext .= "\t\t*/\n";
-    if(in_array($favorite, $set1)){
+    if(in_array($favorite, $set1) && count($set1) > count($set2)){
         $racetext .= "\t\t'favorite set'  =>  'Set 1',\n";    
     }
-    else{
+    elseif(count($set2) > count($set1)){
         $racetext .= "\t\t'favorite set'  =>  'Set 2',\n";  
     }
     $racetext .= "\t\t'Set 1 Win Bets'  =>  [\n";
